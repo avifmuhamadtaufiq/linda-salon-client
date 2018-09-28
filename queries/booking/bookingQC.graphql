@@ -1,0 +1,15 @@
+query BookingQ ($id: ID!) {
+    booking (id: $id) @client {
+      id
+      status
+      items {
+        id
+        amount
+        product {
+          id
+          name
+          stock
+        }
+      }
+    }
+  } 

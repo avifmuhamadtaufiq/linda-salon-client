@@ -1,0 +1,7 @@
+mutation DeleteBookingM($id: ID!) {
+  deleteBooking(
+    id: $id
+  ) {
+    id
+  }
+}

@@ -1,0 +1,14 @@
+#import "../fragment/loginMenuFragment.graphql"
+#import "../fragment/bookingMenuFragment.graphql"
+#import "../fragment/dataUserForProductFragment.graphql"
+
+query MeQ {
+  me {
+    name
+    email
+    role
+    ...LoginMenuFragment
+    ...BookingMenuFragment
+    ...DataUserForProductFragment
+  }
+}
